@@ -14,7 +14,7 @@ float RunningTotal = 0;
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *screenLabel;
+@property (weak, nonatomic) IBOutlet UILabel *screenLabel;// 要和storyboard裡相關介面拉起來
 
 @property (weak, nonatomic) IBOutlet UIButton *zeroButton;
 @property (weak, nonatomic) IBOutlet UIButton *oneButton;
@@ -37,7 +37,7 @@ float RunningTotal = 0;
 
 
 
--(IBAction)Number1:(id)sender;
+-(IBAction)Number1:(id)sender; // 當.m裡面拉好這裡就會自動拉起來
 -(IBAction)Number2:(id)sender;
 -(IBAction)Number3:(id)sender;
 -(IBAction)Number4:(id)sender;

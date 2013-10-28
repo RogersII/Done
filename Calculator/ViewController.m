@@ -14,12 +14,12 @@
 
 @implementation ViewController
 
-@synthesize screenLabel = _screenLabel;
+@synthesize screenLabel = _screenLabel; //因為property的緣故
 
 -(IBAction)Number1:(id)sender;{
-    SelectNumber = SelectNumber * 10;  // so SelectNumber is default to be 0? What's the default?
+    SelectNumber = SelectNumber * 10;  // 要和storyboard裡相關介面拉起來
     SelectNumber = SelectNumber + 2;
-    self.screenLabel.text = [NSString stringWithFormat:@"%i",SelectNumber];
+    self.screenLabel.text = [NSString stringWithFormat:@"%i",SelectNumber];// self表示我們要的是這對.h.m檔中的screenLabel
 }
 -(IBAction)Number2:(id)sender;{
     SelectNumber = SelectNumber * 10;
