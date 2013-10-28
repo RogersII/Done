@@ -18,7 +18,7 @@
 
 -(IBAction)Number1:(id)sender;{
     SelectNumber = SelectNumber * 10;  // so SelectNumber is default to be 0? What's the default?
-    SelectNumber = SelectNumber + 1;
+    SelectNumber = SelectNumber + 2;
     self.screenLabel.text = [NSString stringWithFormat:@"%i",SelectNumber];
 }
 -(IBAction)Number2:(id)sender;{
